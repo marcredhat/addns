@@ -1,0 +1,127 @@
+# extended LDIF
+#
+# LDAPv3
+# base <OU=test-sme-demo,DC=clouderalab,DC=local> with scope subtree
+# filter: (objectclass=*)
+# requesting: ALL
+#
+
+# test-sme-demo, clouderalab.local
+dn: OU=test-sme-demo,DC=clouderalab,DC=local
+objectClass: top
+objectClass: organizationalUnit
+ou: test-sme-demo
+distinguishedName: OU=test-sme-demo,DC=clouderalab,DC=local
+instanceType: 4
+whenCreated: 20220702081211.0Z
+whenChanged: 20220702081247.0Z
+uSNCreated: 16659
+uSNChanged: 16663
+name: test-sme-demo
+objectGUID:: KVRuFfvYgEu6Rv7LHxKPqA==
+objectCategory: CN=Organizational-Unit,CN=Schema,CN=Configuration,DC=clouderal
+ ab,DC=local
+dSCorePropagationData: 20220702081247.0Z
+dSCorePropagationData: 20220702081211.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# svc-accounts, test-sme-demo, clouderalab.local
+dn: OU=svc-accounts,OU=test-sme-demo,DC=clouderalab,DC=local
+objectClass: top
+objectClass: organizationalUnit
+ou: svc-accounts
+distinguishedName: OU=svc-accounts,OU=test-sme-demo,DC=clouderalab,DC=local
+instanceType: 4
+whenCreated: 20220702081247.0Z
+whenChanged: 20220702081247.0Z
+uSNCreated: 16661
+uSNChanged: 16662
+name: svc-accounts
+objectGUID:: akpijUs20EGORQIHEohlDA==
+objectCategory: CN=Organizational-Unit,CN=Schema,CN=Configuration,DC=clouderal
+ ab,DC=local
+dSCorePropagationData: 20220702081247.0Z
+dSCorePropagationData: 20220702081247.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# dexuser dexuser, svc-accounts, test-sme-demo, clouderalab.local
+dn: CN=dexuser dexuser,OU=svc-accounts,OU=test-sme-demo,DC=clouderalab,DC=loca
+ l
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: dexuser dexuser
+givenName: dexuser
+distinguishedName: CN=dexuser dexuser,OU=svc-accounts,OU=test-sme-demo,DC=clou
+ deralab,DC=local
+instanceType: 4
+whenCreated: 20220702081508.0Z
+whenChanged: 20220702081641.0Z
+displayName: dexuser
+uSNCreated: 16665
+uSNChanged: 16679
+name: dexuser dexuser
+objectGUID:: Kj1IhOPU4UqRHoIB3NvSig==
+userAccountControl: 66048
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133012233086445275
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA7qZW9zFTJw9XLkcwVwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: dexuser
+sAMAccountType: 805306368
+userPrincipalName: dexuser@clouderalab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=clouderalab,DC=local
+dSCorePropagationData: 16010101000000.0Z
+
+# sme-ad-bind, svc-accounts, test-sme-demo, clouderalab.local
+dn: CN=sme-ad-bind,OU=svc-accounts,OU=test-sme-demo,DC=clouderalab,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: sme-ad-bind
+givenName: sme-ad-bind
+distinguishedName: CN=sme-ad-bind,OU=svc-accounts,OU=test-sme-demo,DC=cloudera
+ lab,DC=local
+instanceType: 4
+whenCreated: 20220702081615.0Z
+whenChanged: 20220706081817.0Z
+displayName: sme-ad-bind
+uSNCreated: 16672
+memberOf: CN=field-se,CN=Users,DC=clouderalab,DC=local
+uSNChanged: 17078
+name: sme-ad-bind
+objectGUID:: VBeXF+yhBU2trBJ1zUj4rA==
+userAccountControl: 66048
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133012233750663962
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA7qZW9zFTJw9XLkcwWAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: sme-ad-bind
+sAMAccountType: 805306368
+userPrincipalName: sme-ad-bind@clouderalab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=clouderalab,DC=local
+dSCorePropagationData: 16010101000000.0Z
+lastLogonTimestamp: 133015690971688608
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 5
+# numEntries: 4
