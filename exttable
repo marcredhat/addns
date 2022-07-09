@@ -1,3 +1,11 @@
+
+[root@base1 ~]# kinit -kt hive.keytab -p  hive/base1.clouderalab.local@ECS.LAB
+
+
+[root@base1 ~]# hdfs dfs -mkdir hdfs://base1.clouderalab.local/warehouse/tablespace/external/hive/marc
+[root@base1 ~]# hdfs dfs -chmod -R 777  hdfs://base1.clouderalab.local/warehouse/tablespace/external/hive/marc
+
+
 CREATE EXTERNAL TABLE IF NOT EXISTS marc.students(
   student_ID INT, FirstName STRING, LastName STRING,    
   year STRING, Major STRING)
