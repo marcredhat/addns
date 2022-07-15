@@ -5,5 +5,5 @@
 ```
  /opt/cloudera/parcels/ECS-1.4.0-b2677-ecs-1.4.0-b2677.p0.28335028/docker/ctr \
 --address=/run/k3s/containerd/containerd.sock \
---namespace=k8s.io container list | grep -nginx-ingress-controller
+--namespace=k8s.io container list | grep nginx-ingress-controller
 ```
