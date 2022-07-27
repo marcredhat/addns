@@ -1,4 +1,4 @@
 fuser -kim /dev/mapper/rhel-home
 umount -f  /dev/mapper/rhel-home
-lvremove /dev/mapper/rhel-home
+lvremove -y /dev/mapper/rhel-home
 lvextend -An -l +100%FREE -r /dev/mapper/rhel-root
