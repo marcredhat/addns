@@ -1,4 +1,9 @@
 
+
+printf "o\nn\np\n1\n\n\nw\n" | fdisk /dev/sdb
+printf "o\nn\np\n1\n\n\nw\n" | fdisk /dev/sdc
+printf "o\nn\np\n1\n\n\nw\n" | fdisk /dev/sdd
+
 mkfs.xfs /dev/sdb1
 mkfs.xfs /dev/sdc1
 mkfs.xfs /dev/sdd1
